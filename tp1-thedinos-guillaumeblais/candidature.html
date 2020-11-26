@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Candidature</title>
+</head>
+<body>
+    <div class="princ-container">
+        <header>
+            <h1> <img id="logo" src="images/logo.png" alt="logoTheDinos"> Devenir l'un d'entre nous?</h1>
+        <nav>
+            <a id="accueil" href="index.html"> Accueil</a>
+            <a id="equipe" href="equipe.html"> Équipe</a>
+            <a id="images" href="gallerie-images.html"> Images</a>
+            <a id="candi" href="candidature.html"> Candidature</a>
+        </nav>
+        </header>
+        <section class="candi">
+            <h3>Vous voulez rejoindre notre équipe? Rien n'est plus facile! Remplissez ce petit formulaire et nous vous recontacterons dans les jours à venir. </h3>
+            <form action="confirmation.html" method="post">
+                <div class="candi-container">
+                    <div>    
+                        <label for="txtnom">Nom</label>
+                        <input type="text" name="txtnom" id="txtnom">
+                    </div>
+                    <div>
+                        <label for="txtprenom">Prénom</label>
+                        <input type="text" name="txtprenom" id="txtprenom">
+                    </div>
+                    <div>
+                        <label for="email">Courriel</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                    <div>
+                        <label for="txtdiscord">Discord</label>
+                        <input type="text" name="txtdiscord" id="txtdiscord">
+                    </div>
+                    <div>
+                        <label for="jeux">Jeux</label>
+                        <input list="jeux">
+                        <datalist id="jeux">
+                            <option value="CSGO">
+                            <option value="Warzone">
+                            <option value="Rainbow Six Siege">
+                        </datalist>
+                    </div>
+                    <div>
+                        <label for="disponibilité">Disponibilités</label>
+                        <input list="disponibilité">
+                        <datalist id="disponibilité">
+                            <option value="Matin">
+                            <option value="Jour">
+                            <option value="Soir">
+                        </datalist>
+                    </div>    
+                </div>
+
+                <div class="question">
+                    <label for="txtquestion">Pourquoi désirez-vous rejoindre notre équipe?</label>
+                    <textarea name="txtquestion" id="txtquestion" rows="10" cols="107"></textarea>
+                </div>
+                    <div class="date">
+                        <label id="txtdate2" for="txtdate">Date de début</label>
+                        <input type="date" name="txtdate" id="txtdate">
+                        <input id="envoyer" type="submit" value="Envoyer">
+                    </div>
+                   
+            </form>
+        </section>
+            <section class="pub">
+                <img id="rtx" src="images/nouvelle-rtx.jpg" alt="La nouvelle RTX">
+                <h4>Les nouvelles RTX</h4>
+                <img id="nouvesport" src="images/nouvelle-esport.jpg" alt="Pénurie de recrues">
+                <h4>Pénurie de nouvelles recrues dans la concentration Esport</h4>
+                <img id="process" src="images/nouvelle-amd.jpg" alt="Nouveau Processeur AMD">
+                <h4>Le nouveau processeur d'AMD</h4>
+            </section>
+        <footer>
+            <h3>The Dinos - <a id="contact" href="mailto:2034220@csfoy.ca?subject=The%20subject%20of%20the%20mail">Contactez-nous</a> - Copyright 2018</h3>
+        </footer>
+    </div>
+</body>
+</html>
